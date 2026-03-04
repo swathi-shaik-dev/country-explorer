@@ -1,16 +1,59 @@
-# React + Vite
+# 🌍 Country Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that allows users to explore countries around the world using real-time data from the REST Countries API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- Fetches real-time country data
+- Search countries by name
+- Filter countries by region
+- Displays flag, population, region, and capital
+- Loading and error handling
+- Responsive layout
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Vite)
+- JavaScript (ES6+)
+- REST Countries API
+- CSS
+
+---
+
+## 📡 API Used
+
+REST Countries API:
+https://restcountries.com/
+
+Example endpoint:
+https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital,cca3
+
+---
+
+## Insatllation & Setup 
+1. Clone the repository: git clone
+2. Navigate to the project folder: cd country-explorer
+3. Install dependencies: npm install 
+4. Start development server: npm run dev 
+
+---
+
+## 💡 What I Learned
+
+- API integration using fetch
+- Handling loading and error states
+- Conditional rendering in React
+- Component-based architecture
+- Client-side filtering
+- Optional chaining
+
+---
+
+
+## 👩‍💻 Author
+
+Swathi
