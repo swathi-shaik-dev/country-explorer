@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Georgia", serif;
+  background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg");
+  background-size: cover;
+  color: whitesmoke;
+  padding: 20px 0px;
+}
+
+.title{
+  font-size: 28px;
+  color: whitesmoke;
+}
+
+
+@media (min-width: 768px){
+  .title{
+    font-size: 38px;
+  }
+}
+
+
+
+.search-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  color: whitesmoke;
+}
+
+.search-input{
+  border: 1px solid whitesmoke;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 10px;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  width: 70%;
+  background: transparent;
+  color: whitesmoke;
+}
+
+.select-option{
+  border: 1px solid whitesmoke;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 10px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+.countries-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  padding: 0px;
+  list-style-type: none;
+  overflow: auto;
+}
+
+@media (min-width: 768px){
+  .countries-container{
+    width: 80%;
+  }
+}
+
+.country-card{
+  width: 100%;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+@media (min-width: 576px){
+  .country-card{
+    width: 43%;
+    margin: 18px;
+  }
+}
+
+@media (min-width: 768px){
+  .country-card{
+    width: 28%;
+    margin: 15px;
+  }
+}
+
+.country-img{
+  width: 100%;
+  height: 180px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.country-name{
+  font-size: 25px;
+  margin: 0px 0px 0px 10px;
+}
+
+.country-details{
+  font-size: 18px;
+  margin: 0px 0px 0px 10px;
+}
+
+.empty-container{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-title{
+  text-align: center;
+  font-size: 28px;
+}
